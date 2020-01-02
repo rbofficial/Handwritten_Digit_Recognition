@@ -43,7 +43,7 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_s
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Large CNN Error: %.2f%%" % (100-scores[1]*100))
 
-# 0.86%
+
 '''
 loss: 0.0277 - acc: 0.9908 - val_loss: 0.0269 - val_acc: 0.9914
 Large CNN Error: 0.86%
