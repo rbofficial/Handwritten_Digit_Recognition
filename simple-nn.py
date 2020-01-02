@@ -1,6 +1,4 @@
 # baseline model with multi-layer perceptrons
-
-
 import mnist
 from keras.models import Sequential
 from keras.layers import Dense
@@ -37,7 +35,6 @@ train_labels= np_utils.to_categorical(train_labels)
 num_classes= test_labels.shape[1] #????
 
 #define baseline model
-
 def baseline_model():
     # create model
     model = Sequential()
@@ -57,8 +54,6 @@ The model is fit over 10 epochs with updates every 200 images.
  A verbose value of 2 is used to reduce the output to one line for each training epoch.
 '''
 
-# idk what is batch size, verbose
-#i guess scores[1] is accuracy
 #build the model
 model = baseline_model()
 # Fit the model
